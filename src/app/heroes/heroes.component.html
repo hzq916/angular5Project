@@ -1,0 +1,11 @@
+<H2>my Heroes</H2>
+<ul class="heroes">
+ <li *ngFor='let item of heroes'>
+   <a routerLink='/detail/{{item.id}}'>
+    <span class="badge">{{item.id}}</span>{{item.name}}
+  </a>
+ </li>
+</ul>
+<!-- 通过[class.selected]利用条件判断来添加和移除class名称 -->
+
+<!-- <app-hero-detail [hero]='selectedHero'></app-hero-detail> -->
